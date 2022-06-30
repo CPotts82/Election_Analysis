@@ -115,7 +115,7 @@ with open(file_to_load) as election_data:
         # 5: Add a vote to that county's vote count.
         county_votes[county_name] += 1 
 ```
-In order to find the county with the largest vote turnout another nested loop was built.  The outside loop is a while loop and the inside loop a for loop that retrieved the vote count per county, calculate the percentage of votes per county and printed the summary.  Inside this for loop was an if statement that determined the county with the largest turnout. 
+In order to find the county with the largest vote turnout another nested loop was built.  The outside loop is a while loop and the inside loop a for loop that retrieved the vote count per county, calculate the percentage of votes per county and printed the summary. Inside this for loop was an if statement that determined the county with the largest turnout. (The analysis on the winning candidate was done the same way.)
 ```# Save the results to our text file.
 with open(file_to_save, "w") as txt_file:
 
@@ -153,3 +153,4 @@ with open(file_to_save, "w") as txt_file:
         f"-------------------------\n")
     print(county_win)
 ```
+## Statement Summary 
