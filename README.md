@@ -51,3 +51,14 @@ The analysis of the election shows the following information regarding counties 
   - Denver County contributed 82.8% of the vote count with 306,055 votes.
 - The county with the highest voter turnout was Denver County.
 
+- The candidates of this election were:
+  - Charles Casper Stockham
+  - Diana DeGette
+  - Raymon Anthony Doane
+The candidate results were:
+  - Charles Casper Stockham with 23.0% of the vote and 85,213 votes.
+  - Diana Degette with 73.8% of the vote and 272,892 votes.
+  - Raymon Anthony Doane with 3.1% of the vote and 11,606 votes. 
+The winning candidate results:
+  - Diana Degette with 73.8% of the vote and 272,892 votes.
+
