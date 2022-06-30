@@ -154,7 +154,8 @@ with open(file_to_save, "w") as txt_file:
     print(county_win)
 ```
 ## Statement Summary 
-Two ways this script could be modified:
+The script written in the analysis of this congressional precinct election can be modified and used in many elections at varying levels.  This script can be used for bigger state elections and federal elections, or it can go the other way and be used for smaller scale elections like for school boards or even PTO president if one wanted to.  This script is easily modifieable and can be added to or edited down depending upon the needs of the current election. Obviously the larger scale elections, state and federal, will have much much bigger data files to work with but that is ok because this script can handle it! It can handle extremely large amounts of data or very small amounts of data.  Lets look at a few ways we could modify this code:
+
 1- Instead of a county election, it can easily be modified for state elections and federal elections. It could help keep up with how many votes from each county within a state or each state within the country. 
 
 2- This script could also be modified to keep up the with election votes associated with political party ties.
