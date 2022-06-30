@@ -49,7 +49,7 @@ The analysis of the election shows the following information regarding counties 
   - Arapahoe County contributed 6.7% of the vote count with 24,801 votes.
   - Jefferson County contributed 10.5% of the vote count with 38,855 votes.
   - Denver County contributed 82.8% of the vote count with 306,055 votes.
-- The county with the highest voter turnout was Denver County.
+- The county with the highest voter turnout was Denver County with 82.8% of the vote and 306,055 votes.
 
 - The candidates of this election were:
   - Charles Casper Stockham
