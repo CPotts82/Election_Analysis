@@ -62,3 +62,4 @@ The analysis of the election shows the following information regarding counties 
 - The winning candidate results:
   - Diana Degette with 73.8% of the vote and 272,892 votes.
 
+The Election results summary:
