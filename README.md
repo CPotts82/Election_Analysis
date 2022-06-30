@@ -9,6 +9,8 @@ A Colorado Board of Elections employee has given you the following tasks to comp
 4. Calculate the percentage of votes each candidate received. 
 5. Determine the winner of the election based on popular vote. 
 
+The calculations, compiled lists and determinations taken into account to perform these tasks include all voting methods: mail-in-ballots, punch cards and direct recording electronic, (DRE counting machines).
+
 ## Resources
 - Data Source: election_results.csv
 - Software; Python 3.7.6, Visual Studio Code, 1.68.1
@@ -28,5 +30,12 @@ The analysis of the election show that:
   - Diana DeGette who received 73.8% of the vote and 272,892 number of votes. 
 
 ## Challenge Overview
+The Colorado Board of Elections has requested not only the information regarding each candidate in this US Congressional Precinct Election but has also requested a Vote Count Report for the following counties in the election: Jefferson County, Arapahoe County and Denver County.  The Board has requested the following information:
+
+1. Determine voter turnout per county.
+2. Calculate percentage of votes from each county. 
+3. Determine the county with the highest voter turnout.
+
+As with the candidate analysis, the tasks in the above list will take in to account all three voting methods mentioned above. 
 
 ## Challenge Summary
