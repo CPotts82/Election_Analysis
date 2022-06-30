@@ -39,3 +39,15 @@ The Colorado Board of Elections has requested not only the information regarding
 As with the candidate analysis, the tasks in the above list will take in to account all three voting methods mentioned above. 
 
 ## Challenge Summary
+The analysis of the election shows the following information regarding counties and then finally the winning candidate:
+- There were 369,711 votes cast in this election.
+- The counties in the election were:
+  - Arapahoe County
+  - Jefferson County
+  - Denver County
+- The results for each county were:
+  - Arapahoe County contributed 6.7% of the vote count with 24,801 votes.
+  - Jefferson County contributed 10.5% of the vote count with 38,855 votes.
+  - Denver County contributed 82.8% of the vote count with 306,055 votes.
+- The county with the highest voter turnout was Denver County.
+
