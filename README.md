@@ -154,3 +154,9 @@ with open(file_to_save, "w") as txt_file:
     print(county_win)
 ```
 ## Statement Summary 
+Two ways this script could be modified:
+1- Instead of a county election, it can easily be modified for state elections and federal elections. It could help keep up with how many votes from each county within a state or each state within the country. 
+
+2- This script could also be modified to keep up the with election votes associated with political party ties.
+
+3- This script could be modified to keep up with demographics of voters. 
