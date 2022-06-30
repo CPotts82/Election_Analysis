@@ -65,3 +65,51 @@ The analysis of the election shows the following information regarding counties 
 The Election results summary:
 
 ![election_analysis](https://user-images.githubusercontent.com/106348899/176748703-3d12c9d9-3eb3-4da0-bcf5-94ad0dc9a031.png)
+
+In order to find the number of votes for each county a for loop was created that iterated through the csv file.  Inside the for loop there were multiple decision statements that pulled out unique county names and placed them in a list, the loop also tracked the vote count per county. This was also done for the candidate data inside the same overall with loop. 
+```# Read the csv and convert it into a list of dictionaries
+with open(file_to_load) as election_data:
+    reader = csv.reader(election_data)
+
+    # Read the header
+    header = next(reader)
+
+    # For each row in the CSV file.
+    for row in reader:
+
+        # Add to the total vote count
+        total_votes += 1
+
+        # Get the candidate name from each row.
+        candidate_name = row[2]
+        #print(candidate_name)
+        
+        # 3: Extract the county name from each row.
+        county_name = row[1]
+        #print(county_name)
+
+        # If the candidate does not match any existing candidate add it to
+        # the candidate list
+        if candidate_name not in candidate_options:
+
+            # Add the candidate name to the candidate list.
+            candidate_options.append(candidate_name)
+
+            # And begin tracking that candidate's voter count.
+            candidate_votes[candidate_name] = 0
+
+        # Add a vote to that candidate's count
+        candidate_votes[candidate_name] += 1
+
+        # 4a: Write an if statement that checks that the
+        # county does not match any existing county in the county list.
+        if county_name not in county_options:
+
+            # 4b: Add the existing county to the list of counties.
+            county_options.append(county_name)
+
+            # 4c: Begin tracking the county's vote count.
+            county_votes[county_name] = 0
+
+        # 5: Add a vote to that county's vote count.
+        county_votes[county_name] += 1 ```
