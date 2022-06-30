@@ -63,3 +63,4 @@ The analysis of the election shows the following information regarding counties 
   - Diana Degette with 73.8% of the vote and 272,892 votes.
 
 The Election results summary:
+![election_analysis](https://user-images.githubusercontent.com/106348899/176748703-3d12c9d9-3eb3-4da0-bcf5-94ad0dc9a031.png)
