@@ -156,8 +156,31 @@ with open(file_to_save, "w") as txt_file:
 ## Statement Summary 
 The script written in the analysis of this congressional precinct election can be modified and used in many elections at varying levels.  This script can be used for bigger state elections and federal elections, or it can go the other way and be used for smaller scale elections like for school boards or even PTO president if one wanted to.  This script is easily modifieable and can be added to or edited down depending upon the needs of the current election. Obviously the larger scale elections, state and federal, will have much much bigger data files to work with but that is ok because this script can handle it! It can handle extremely large amounts of data or very small amounts of data.  Lets look at a few ways we could modify this code:
 
-1- Instead of a county election, it can easily be modified for state elections and federal elections. It could help keep up with how many votes from each county within a state or each state within the country. 
-
+1- Instead of a county election, the script can easily be modified for state elections and national elections. It could help keep up with how many votes from each county within a state or each state within the country. Of course the variables created and decision statements made would depend upon the information within the data file.  If we were to use this script for the national presidential election we would need to change all "county" variables to "state" variables.  For example: "county_votes", "county_options" and "county_name" would need to be change to "state_votes", "state_options" and "state_name".  At this point the state variables could then be plugged into the decision statements and the same decisions and calculations could be performed.  Lets look at an example of some code:
+```# 6a: Write a for loop to get the county from the county dictionary.
+    for county_name in county_votes:
+        # 6b: Retrieve the county vote count.
+        votes = county_votes[county_name]
+        # 6c: Calculate the percentage of votes for the county.
+        county_vote_percentage = float(votes) / float(total_votes) * 100
+        county_results = (f"{county_name} : {county_vote_percentage:.1f}% ({votes:,})\n")
+         # 6d: Print the county results to the terminal.
+        print(county_results)
+         # 6e: Save the county votes to a text file.
+        txt_file.write(county_results)
+         # 6f: Write an if statement to determine the winning county and get its vote count.
+        if (votes > winning_votes) and (county_vote_percentage > winning_percentage):
+            winning_county = county_name
+            winning_votes = votes
+           
+    # 7: Print the county with the largest turnout to the terminal.
+    county_win = (
+        f"-------------------------\n"
+        f"Largest County Turnout : {winning_county}\n"
+        f"-------------------------\n")
+    print(county_win)
+```
+In the above code - in every place that you see "county" we could create those "state" variables above this for loop and then plug the "state" variables into this exact code.  The calculations, determinations and print statements would be the same except with the state data and results. 
 2- This script could also be modified to keep up the with election votes associated with political party ties.
 
 3- This script could be modified to keep up with demographics of voters. 
